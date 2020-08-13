@@ -1,8 +1,10 @@
 package com.bai3;
 
+import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.*;
+import java.io.File;
 
 public class bai3 {
     public static String readFile (String fileName) {
@@ -68,29 +70,21 @@ public class bai3 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        Callable<String> task1 = () -> {
-            String txt1 = readFile("data/1.txt");
-            return txt1;
-        };
+        File directory = new File("data");
+        File[] files = directory.listFiles();
+        String dirWordList = "";
 
-        Callable<String> task2 = () -> {
-            String txt2 = readFile("data/2.txt");
-            return txt2;
-        };
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        for (File file: files){
+            Callable<String> task = () -> {
+                String wordList = readFile("data/" + file.getName());
+                return wordList;
+            };
+            Future<String> future = executor.submit(task);
+            dirWordList += future.get() + " ";
+        }
 
-        Callable<String> task3 = () -> {
-            String txt3 = readFile("data/3.txt");
-            return txt3;
-        };
-
-        ExecutorService executor = Executors.newFixedThreadPool(3);
-        Future<String> future1 = executor.submit(task1);
-        Future<String> future2 = executor.submit(task2);
-        Future<String> future3 = executor.submit(task3);
-        String result = future1.get() + " " + future2.get() + " " + future3.get();
         executor.shutdown();
-
-        checkFrequency(result);
-
+        checkFrequency(dirWordList);
     }
 }
