@@ -28,6 +28,18 @@ public class bai3 {
         } catch (IOException e) {
             e.printStackTrace();
             }
+        finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                fr.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
         return txt;
     }
@@ -42,15 +54,26 @@ public class bai3 {
         }
     }
 
-    public static void checkFrequency (String result){
+    public static String fixString (String in){
 
-        String[] words = result.split("\\s");
-        int size = words.length;
+        in = in.replaceAll("\\,+", " ");
+        in = in.replaceAll("\\.+", " ");
+        in = in.replaceAll("\\s+", " ");
+        in = in.trim();
+
+        return in;
+    }
+
+    public static void checkFrequency (String result){
+        List<String> words = new ArrayList<String>();
+
+        words = Arrays.asList(result.split("\\s"));
+        int size = words.size();
 
         // add word to map
         Map<String, Integer> map = new HashMap<String, Integer>();
         for (int i = 0; i < size; i++){
-            addElement(map, words[i]);
+            addElement(map, words.get(i));
         }
 
         List<Map.Entry<String, Integer>> sortedMap = new ArrayList<Map.Entry<String, Integer>>();
@@ -72,7 +95,9 @@ public class bai3 {
 
         File directory = new File("data");
         File[] files = directory.listFiles();
+        StringBuilder text = null;
         String dirWordList = "";
+
 
         ExecutorService executor = Executors.newFixedThreadPool(5);
         for (File file: files){
@@ -81,10 +106,13 @@ public class bai3 {
                 return wordList;
             };
             Future<String> future = executor.submit(task);
+            //text.append(future.get() + " ");
             dirWordList += future.get() + " ";
         }
+        
 
         executor.shutdown();
-        checkFrequency(dirWordList);
+        System.out.println(dirWordList);
+        //checkFrequency(fixString(dirWordList));
     }
 }

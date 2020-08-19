@@ -6,37 +6,35 @@ import java.util.Random;
 import java.util.Set;
 
 public class bai1 {
+
+    public static int random() {
+        Random rd = new Random();
+
+        return rd.nextInt(300000);
+    }
+
+    public static void genNum(Set<Integer> set) {
+        while(set.size()<200000) {
+            int s = random();
+            set.add(s);
+        }
+    }
+
     public static void main(String[] args) {
-        Random generator = new Random();
-        Set<Integer> hashsetInteger1 = new HashSet<>();
-        Set<Integer> hashsetInteger2 = new HashSet<>();
-        int count = 0;
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> setB = new HashSet<>();
 
-        for (int i = 0; i < 200000; i++){
-            if (hashsetInteger1.size() < 200000) {
-                for (int j = 0; j < 200000 - hashsetInteger1.size(); i++){
-                    hashsetInteger1.add(generator.nextInt());
-                }
-            }
-        }
+        genNum(setA);
+        genNum(setB);
 
-        for (int i = 0; i < 200000; i++){
-            if (hashsetInteger2.size() < 200000) {
-                for (int j = 0; j < 200000 - hashsetInteger2.size(); i++){
-                    hashsetInteger2.add(generator.nextInt());
-                }
-            }
-        }
+        System.out.println("Tap giao");
+        setA.retainAll(setB);
+        System.out.println(setA);
 
-        Iterator<Integer> loop = hashsetInteger1.iterator();
-        while (loop.hasNext()){
-            int value = loop.next();
-            if (hashsetInteger2.contains(value)){
-                System.out.println(value);
-                count++;
-            }
-        }
 
-        System.out.println("The same element number is: " + count);
+        System.out.println("Tap hop");
+        setB.addAll(setA);
+        System.out.println(setB);
+
     }
 }

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class bai2 {
-    public static String readFile(){
+    public static String readFile() throws IOException {
         BufferedReader br = null;
         FileReader fr = null;
         String txt = "";
@@ -26,6 +26,7 @@ public class bai2 {
         } catch (IOException e) {
             e.printStackTrace();
         }
+            fr.close();
 
         return txt;
     }
@@ -41,7 +42,7 @@ public class bai2 {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         String output = "";
         String[] words = readFile().split("\\s");

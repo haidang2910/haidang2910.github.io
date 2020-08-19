@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class bai4 {
+    static Set<String> setPoint = new HashSet<>();
     public static List toaDo (int numberOfPoint, int distance, int dx, int dy){
-        int count = 0;
+
         int row, col;
         double d;
 
@@ -14,14 +15,13 @@ public class bai4 {
 
         Random rd = new Random();
 
-        while (count < numberOfPoint){
+        while (setPoint.size() < numberOfPoint){
             row = rd.nextInt(5000);
             col = rd.nextInt(5000);
             d = Math.sqrt(Math.pow((dx - row), 2) + Math.pow((dy - col), 2));
 
             if (d < distance){
-                txt.add("x = " + row + " " + "y = " + col);
-                count++;
+                setPoint.add("x " + row + " " + "y " + col);
             }
         }
 
@@ -45,6 +45,7 @@ public class bai4 {
         pointList.addAll(toaDo(10000,500, 4000,800));
         pointList.addAll(toaDo(12000,600, 2400, 2400));
 
+        pointList.addAll(setPoint);
 
         Collections.shuffle(pointList);
 
