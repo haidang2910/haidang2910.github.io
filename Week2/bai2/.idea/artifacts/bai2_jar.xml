@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bai2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bai2_jar</output-path>
+    <root id="archive" name="bai2.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="bai2" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
