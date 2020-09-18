@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="WordCountRedis:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29818bc6-c876-49ea-9af7-bfcf8bf43e2f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ghxY0f36FbHkmWda7SsdxXk5Kf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WordCountSpark" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordCount" />
+      <module name="WordCount" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WordCount" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29818bc6-c876-49ea-9af7-bfcf8bf43e2f" name="Default Changelist" comment="" />
+      <created>1598580671819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598580671819</updated>
+      <workItem from="1598580673018" duration="193000" />
+      <workItem from="1598580887627" duration="7707000" />
+      <workItem from="1598666650498" duration="967000" />
+      <workItem from="1598667659878" duration="3380000" />
+      <workItem from="1598793367297" duration="78000" />
+      <workItem from="1598840982068" duration="1115000" />
+      <workItem from="1598842752273" duration="79000" />
+      <workItem from="1598844428451" duration="2213000" />
+      <workItem from="1599189438462" duration="1072000" />
+      <workItem from="1599190541073" duration="174000" />
+      <workItem from="1599190741320" duration="850000" />
+      <workItem from="1599191617529" duration="3181000" />
+      <workItem from="1599271641340" duration="1216000" />
+      <workItem from="1599445862013" duration="152000" />
+      <workItem from="1599446038101" duration="1268000" />
+      <workItem from="1599449115555" duration="1399000" />
+      <workItem from="1599450630189" duration="341000" />
+      <workItem from="1600045898392" duration="453000" />
+      <workItem from="1600049396339" duration="838000" />
+      <workItem from="1600057262870" duration="1269000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="177" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599446280498">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="418" y="177" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.985@0.27.1920.985" timestamp="1599446280498" />
+    <state x="683" y="318" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599450661494">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="683" y="318" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1920.985@0.27.1920.985" timestamp="1599450661494" />
+    <state x="263" y="277" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600059177056">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="263" y="277" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1600059177056" />
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom" timestamp="1599450597201">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1599450597201" />
+    <state width="1874" height="253" key="GridCell.Tab.0.center" timestamp="1599450597201">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1599450597201" />
+    <state width="1874" height="253" key="GridCell.Tab.0.left" timestamp="1599450597201">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1599450597201" />
+    <state width="1874" height="253" key="GridCell.Tab.0.right" timestamp="1599450597201">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="253" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1599450597201" />
+    <state x="664" y="129" width="1024" height="852" key="SettingsEditor" timestamp="1599450662967">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="664" y="129" width="1024" height="852" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1599450662967" />
+    <state x="254" y="331" width="442" height="383" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598581748766">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="254" y="331" width="442" height="383" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1920.985@0.27.1920.985" timestamp="1598581748766" />
+    <state x="554" y="121" width="802" height="803" key="new project wizard" timestamp="1599450973102">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="554" y="121" width="802" height="803" key="new project wizard/0.27.1920.985@0.27.1920.985" timestamp="1599450973102" />
+  </component>
+</project>

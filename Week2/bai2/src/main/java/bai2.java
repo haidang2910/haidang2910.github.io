@@ -34,4 +34,6 @@ public class bai2 {
     public static void main(String[] args) throws IOException {
         writeFile(getData());
     }
+
+    // build loi chua dua ra ngoai chay duoc
 }
